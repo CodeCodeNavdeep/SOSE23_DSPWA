@@ -1,10 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <!-- Inputelement Eingabe Suchbegriff, die Eingabe soll dazu führen,
-       dass nur die Items die diesen Begriff beinhalten 
-       (Suchbegriff: "katze", Anzeige: Katzen, Schleichkatzen ) angezeigt werden.
-      -->
+   
        <label for="freeTextSearch">Suchbegriff: </label>
         <input v-model="searchText" name="freeTextSearch">       
       <div v-for="user in filteredUsers()" :key="user">
